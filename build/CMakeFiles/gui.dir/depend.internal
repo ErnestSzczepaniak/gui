@@ -4,7 +4,15 @@
 CMakeFiles/gui.dir/source/display.cpp.o
  ../include/display.h
  ../include/hal.h
- /home/ernest/shared/gui/source/display.cpp
+ /home/en2/Codes/gui/source/display.cpp
 CMakeFiles/gui.dir/source/hal.cpp.o
  ../include/hal.h
- /home/ernest/shared/gui/source/hal.cpp
+ /home/en2/Codes/gui/source/hal.cpp
+CMakeFiles/gui.dir/source/sprite.cpp.o
+ ../include/hal.h
+ ../include/sprite.h
+ /home/en2/Codes/gui/source/sprite.cpp
+CMakeFiles/gui.dir/source/sprite_manager.cpp.o
+ ../include/hal.h
+ ../include/sprite_manager.h
+ /home/en2/Codes/gui/source/sprite_manager.cpp

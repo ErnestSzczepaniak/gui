@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gui.dir/source/display.cpp.o"
   "CMakeFiles/gui.dir/source/hal.cpp.o"
+  "CMakeFiles/gui.dir/source/sprite.cpp.o"
+  "CMakeFiles/gui.dir/source/sprite_manager.cpp.o"
   "libgui.a"
   "libgui.pdb"
 )

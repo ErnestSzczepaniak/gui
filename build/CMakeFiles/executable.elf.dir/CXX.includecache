@@ -8,11 +8,17 @@
 
 ../include/hal.h
 
-/home/ernest/shared/gui/main.cpp
+../include/sprite.h
+
+../include/sprite_manager.h
+
+/home/en2/Codes/gui/main.cpp
 stdio.h
 -
 hal.h
-/home/ernest/shared/gui/hal.h
-fstream
--
+/home/en2/Codes/gui/hal.h
+sprite_manager.h
+/home/en2/Codes/gui/sprite_manager.h
+sprite.h
+/home/en2/Codes/gui/sprite.h
 

@@ -6,5 +6,5 @@ CXX_FLAGS =   -O0 -g
 
 CXX_DEFINES = -Dbuild_platform_host -Dbuild_type_debug -Dbuild_version=1.0.0
 
-CXX_INCLUDES = -I/home/ernest/shared/gui/include -I/home/ernest/shared/gui/architecture/x86 -I/home/ernest/shared/gui/test 
+CXX_INCLUDES = -I/home/en2/Codes/gui/include -I/home/en2/Codes/gui/architecture/x86 -I/home/en2/Codes/gui/test 
 

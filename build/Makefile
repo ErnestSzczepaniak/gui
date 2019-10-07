@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ernest/shared/gui
+CMAKE_SOURCE_DIR = /home/en2/Codes/gui
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ernest/shared/gui/build
+CMAKE_BINARY_DIR = /home/en2/Codes/gui/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ernest/shared/gui/build/CMakeFiles /home/ernest/shared/gui/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/en2/Codes/gui/build/CMakeFiles /home/en2/Codes/gui/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ernest/shared/gui/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/en2/Codes/gui/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -217,6 +217,60 @@ source/hal.cpp.s:
 	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/hal.cpp.s
 .PHONY : source/hal.cpp.s
 
+source/sprite.o: source/sprite.cpp.o
+
+.PHONY : source/sprite.o
+
+# target to build an object file
+source/sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/sprite.cpp.o
+.PHONY : source/sprite.cpp.o
+
+source/sprite.i: source/sprite.cpp.i
+
+.PHONY : source/sprite.i
+
+# target to preprocess a source file
+source/sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/sprite.cpp.i
+.PHONY : source/sprite.cpp.i
+
+source/sprite.s: source/sprite.cpp.s
+
+.PHONY : source/sprite.s
+
+# target to generate assembly for a file
+source/sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/sprite.cpp.s
+.PHONY : source/sprite.cpp.s
+
+source/sprite_manager.o: source/sprite_manager.cpp.o
+
+.PHONY : source/sprite_manager.o
+
+# target to build an object file
+source/sprite_manager.cpp.o:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/sprite_manager.cpp.o
+.PHONY : source/sprite_manager.cpp.o
+
+source/sprite_manager.i: source/sprite_manager.cpp.i
+
+.PHONY : source/sprite_manager.i
+
+# target to preprocess a source file
+source/sprite_manager.cpp.i:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/sprite_manager.cpp.i
+.PHONY : source/sprite_manager.cpp.i
+
+source/sprite_manager.s: source/sprite_manager.cpp.s
+
+.PHONY : source/sprite_manager.s
+
+# target to generate assembly for a file
+source/sprite_manager.cpp.s:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/sprite_manager.cpp.s
+.PHONY : source/sprite_manager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -236,6 +290,12 @@ help:
 	@echo "... source/hal.o"
 	@echo "... source/hal.i"
 	@echo "... source/hal.s"
+	@echo "... source/sprite.o"
+	@echo "... source/sprite.i"
+	@echo "... source/sprite.s"
+	@echo "... source/sprite_manager.o"
+	@echo "... source/sprite_manager.i"
+	@echo "... source/sprite_manager.s"
 .PHONY : help
 
 

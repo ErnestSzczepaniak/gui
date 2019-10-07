@@ -8,3 +8,11 @@ CMakeFiles/gui.dir/source/display.cpp.o: ../source/display.cpp
 CMakeFiles/gui.dir/source/hal.cpp.o: ../include/hal.h
 CMakeFiles/gui.dir/source/hal.cpp.o: ../source/hal.cpp
 
+CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/hal.h
+CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/sprite.h
+CMakeFiles/gui.dir/source/sprite.cpp.o: ../source/sprite.cpp
+
+CMakeFiles/gui.dir/source/sprite_manager.cpp.o: ../include/hal.h
+CMakeFiles/gui.dir/source/sprite_manager.cpp.o: ../include/sprite_manager.h
+CMakeFiles/gui.dir/source/sprite_manager.cpp.o: ../source/sprite_manager.cpp
+
