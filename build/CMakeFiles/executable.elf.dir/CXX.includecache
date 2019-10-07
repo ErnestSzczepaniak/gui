@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/hal.h
+
+/home/ernest/shared/gui/main.cpp
+stdio.h
+-
+hal.h
+/home/ernest/shared/gui/hal.h
+fstream
+-
+

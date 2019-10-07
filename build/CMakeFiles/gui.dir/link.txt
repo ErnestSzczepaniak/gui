@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgui.a  CMakeFiles/gui.dir/source/display.cpp.o CMakeFiles/gui.dir/source/hal.cpp.o
+/usr/bin/ranlib libgui.a

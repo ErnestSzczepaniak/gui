@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/display.h
+
+../include/hal.h
+
+/home/ernest/shared/gui/source/display.cpp
+display.h
+/home/ernest/shared/gui/source/display.h
+hal.h
+/home/ernest/shared/gui/source/hal.h
+
+/home/ernest/shared/gui/source/hal.cpp
+hal.h
+/home/ernest/shared/gui/source/hal.h
+allegro5/allegro.h
+/home/ernest/shared/gui/source/allegro5/allegro.h
+unistd.h
+/home/ernest/shared/gui/source/unistd.h
+
