@@ -33,6 +33,14 @@
 
 int main()
 {
+   Pixel p;
+
+   p._pixel = 0xff520057;
+
+   auto [r, g, b] = p.as_rgb();
+
+   auto [h, s, l] = p.as_hsl();
+
    Texture_manager manager;
    Display display;
 

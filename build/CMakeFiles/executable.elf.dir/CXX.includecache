@@ -26,9 +26,9 @@ texture.h
 config.h
 ../include/config.h
 
-/home/ernest/shared/gui/main.cpp
+/home/en2/Codes/gui/main.cpp
 texture_manager.h
-/home/ernest/shared/gui/texture_manager.h
+/home/en2/Codes/gui/texture_manager.h
 display.h
-/home/ernest/shared/gui/display.h
+/home/en2/Codes/gui/display.h
 

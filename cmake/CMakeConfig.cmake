@@ -26,7 +26,7 @@ set(build_definition_target         )
 set(build_definiton_host            )
 
 #build_compile_options
-set(build_compile_option_common     -O0 -std=c++1z)
+set(build_compile_option_common     -O0 -std=c++1z -Wno-narrowing)
 set(build_compile_option_target     -mcpu=cortex-a9)
 set(build_compile_option_host       )
 

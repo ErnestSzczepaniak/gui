@@ -25,10 +25,10 @@ struct Pixel_format_hsl
 
 class Pixel
 {
-    static constexpr unsigned int _shift_alpha = 24;
-    static constexpr unsigned int _shift_red = 16;
-    static constexpr unsigned int _shift_green = 8;
     static constexpr unsigned int _shift_blue = 0;
+    static constexpr unsigned int _shift_green = 8;
+    static constexpr unsigned int _shift_red = 16;
+    static constexpr unsigned int _shift_alpha = 24;
 
 public:
     Pixel();
@@ -57,9 +57,14 @@ public:
     Pixel_format_rgba as_rgba();
     Pixel_format_hsl as_hsl();
 
+    unsigned int _pixel;
 protected:
 
-    unsigned int _pixel;
+    Pixel_format_rgb _to_rgb(int hue, int saturation, int lightness);
+    float _hue_to_rgb(float v1, float v2, float vH);
+
+    float _find_min(float a, float b);
+    float _find_max(float a, float b);
 };
 
 #endif
