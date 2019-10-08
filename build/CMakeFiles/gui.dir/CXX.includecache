@@ -6,13 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../include/hal.h
+../include/pixel.h
 
-../include/sprite.h
-
-/home/en2/Codes/gui/source/sprite.cpp
-sprite.h
-/home/en2/Codes/gui/source/sprite.h
-hal.h
-/home/en2/Codes/gui/source/hal.h
+/home/ernest/shared/gui/source/pixel.cpp
+pixel.h
+/home/ernest/shared/gui/source/pixel.h
 

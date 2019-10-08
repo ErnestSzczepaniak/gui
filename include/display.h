@@ -1,20 +1,28 @@
 #ifndef _display_h
 #define _display_h
 
+#include "config.h"
+#include "texture.h"
+
 class Display
 {
-    static constexpr int _resulution_x = 128;
-    static constexpr int _resulution_y = 64;
+    struct Screen 
+    {
+        unsigned int space[screen_resolution_y][screen_resolution_x] = {0};
+    };
 
 public:
     Display();
     ~Display();
 
-    void refresh();
-    
-    unsigned int frame_buffer[2][_resulution_y][_resulution_x];
-    int index;
+    void init();
+    void draw(Texture * texture, int x, int y);
 
+protected:
+    Screen _buffer[2];
+    Screen * _current;
+
+    void _swap();
 };
 
 #endif

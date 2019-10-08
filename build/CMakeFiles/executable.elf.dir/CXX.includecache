@@ -6,19 +6,29 @@
 
 #IncludeRegexTransform: 
 
-../include/hal.h
+../include/config.h
 
-../include/sprite.h
+../include/display.h
+config.h
+../include/config.h
+texture.h
+../include/texture.h
 
-../include/sprite_manager.h
+../include/pixel.h
 
-/home/en2/Codes/gui/main.cpp
-stdio.h
--
-hal.h
-/home/en2/Codes/gui/hal.h
-sprite_manager.h
-/home/en2/Codes/gui/sprite_manager.h
-sprite.h
-/home/en2/Codes/gui/sprite.h
+../include/texture.h
+pixel.h
+../include/pixel.h
+
+../include/texture_manager.h
+texture.h
+../include/texture.h
+config.h
+../include/config.h
+
+/home/ernest/shared/gui/main.cpp
+texture_manager.h
+/home/ernest/shared/gui/texture_manager.h
+display.h
+/home/ernest/shared/gui/display.h
 

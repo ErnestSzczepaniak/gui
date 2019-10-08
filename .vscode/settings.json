@@ -55,7 +55,12 @@
         "variant": "cpp",
         "*.in": "cpp",
         "target.h": "c",
-        "pthread.h": "c"
+        "pthread.h": "c",
+        "condition_variable": "cpp",
+        "future": "cpp",
+        "mutex": "cpp",
+        "thread": "cpp",
+        "cinttypes": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

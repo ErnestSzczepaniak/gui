@@ -2,46 +2,87 @@
 #include "allegro5/allegro.h"
 #include "unistd.h"
 #include <fstream>
+#include "config.h"
 
-void h_wait(int ms)
-{
-    usleep(ms * 1000);
-}
+std::ifstream _stream;
+ALLEGRO_DISPLAY * _display;
+ALLEGRO_BITMAP * _bitmap;
 
-void h_display_init()
+void h::gui::display_init()
 {
     al_init();
-    al_create_display(1024, 600);
+    _display = al_create_display(1024, 720);
+    _bitmap = al_create_bitmap(screen_resolution_x, screen_resolution_y);
 }
 
-void h_display_clear()
+void h::gui::display_pointer(unsigned int * pointer)
 {
-    
+    //al_set_target_bitmap(bitmap);
+
+    for (int i = 0; i < screen_resolution_y; i++)
+    {
+        for (int j = 0; j < screen_resolution_x; j++)
+        {
+            auto pixel = pointer[i * screen_resolution_x + j];
+
+            auto a = (pixel >> 24) & 0xff;
+            auto r = (pixel >> 16) & 0xff;
+            auto g = (pixel >> 8) & 0xff;
+            auto b = (pixel) & 0xff;
+
+            al_put_pixel(j, i, {(float)r/255, (float)g/255, (float)b/255, (float)a/255});
+        }
+    }
+
+    al_draw_bitmap(_bitmap, 0, 0, 0);
+    al_flip_display();
 }
 
-void h_display_put_pixel(int x, int y, int r, int g, int b, int a)
+void h::gui::display_put_pixel(int x, int y, int r, int g, int b, int a)
 {
     al_put_pixel(x, y, {(float)r/255, (float)g/255, (float)b/255, (float)a/255});
 }
 
-void h_display_flip()
+void h::gui::display_flip()
 {
     al_flip_display();
 }
 
-bool h_file_open(const char * path, void * buffer, int size)
+bool h::gui::file_open(const char * path)
 {
-    std::ifstream stream;
+    _stream.open(path, std::istream::in);
 
-    stream.open(path, std::istream::in);
-
-    if (stream.is_open())
+    if (_stream.is_open())
     {
-        stream.read((char*)buffer, size);
         return true;
     }
     else
     {
         return false;
     }
+}
+
+void h::gui::file_read(void * buffer, int size)
+{
+    _stream.read((char*)buffer, size);
+}
+
+void h::gui::file_seek(int offset)
+{
+    _stream.seekg(offset, std::ios::beg);
+}
+
+void h::gui::file_close()
+{
+    _stream.close();
+}
+
+void * h::gui::memory_create(int size)
+{
+    return new unsigned char[size];
+}
+
+void h::gui::memory_destroy(void * space)
+{
+    delete[] space;
 }

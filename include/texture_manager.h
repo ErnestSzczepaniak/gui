@@ -1,21 +1,12 @@
-#ifndef _sprite_manager_h
-#define _sprite_manager_h
+#ifndef _texture_manager_h
+#define _texture_manager_h
 
+#include "texture.h"
+#include "config.h"
 
-class Sprite_manager
+class Texture_manager
 {
-    static constexpr int _sprite_heigth = 16;
-    static constexpr int _sprite_width = 10;
-    static constexpr int _cell_buffer_size = 128;
-
-    struct Cell 
-    {
-        bool empty = true; 
-        unsigned int data[_sprite_heigth * _sprite_width]; 
-        const char * path;
-    };
-
-    struct [[gnu::packed]] BMP_file 
+    struct [[gnu::packed]] BMP_header
     {
         unsigned short int id;
         unsigned int size;
@@ -35,18 +26,17 @@ class Sprite_manager
     };
 
 public:
-    Sprite_manager();
-    ~Sprite_manager();
+    Texture_manager();
+    ~Texture_manager();
 
-    unsigned int * open(const char * path);
+    Texture * open(const char * path);
     bool close();
 
-
 protected:
-    Cell * _cell_find();
-    Cell * _cell_find(const char * path);
+    Texture * _texture[manager_size_buffer];
 
-    Cell _cell[_cell_buffer_size];
+    Texture * _texture_find(const char * path);
+    Texture ** _space_find();
 };
 
 #endif

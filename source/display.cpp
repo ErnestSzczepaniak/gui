@@ -2,10 +2,8 @@
 #include "hal.h"
 
 Display::Display()
-:
-index(0)
 {
-
+    _current = &_buffer[1];
 }
 
 Display::~Display()
@@ -13,15 +11,40 @@ Display::~Display()
 
 }
 
-void Display::refresh()
+void Display::init()
 {
-    auto current_index = index;
+    h::gui::display_init();
+}
 
-    for (int i = 0; i < _resulution_y; i++)
+void Display::draw(Texture * texture, int x, int y)
+{
+    if (((x + texture->width()) < screen_resolution_x) && ((y + texture->height()) < screen_resolution_y))
     {
-        for (int j = 0; j < _resulution_x; j++)
+        for (int i = 0; i < texture->height(); i++)
         {
-                //h_pixel_set(i, j, frame_buffer[current_index][i][j]);
+            for (int j = 0; j < texture->width(); j++)
+            {
+                auto * pixel = &texture->pixel()[i * texture->width() + j];
+
+                _current->space[y + texture->height() - i - 1][x + j] = pixel->operator unsigned int();
+            }
         }
+
+        h::gui::display_pointer((unsigned int *) _current);
+        _swap();
+    }
+}
+
+//---------------------------------------------| info |---------------------------------------------//
+
+void Display::_swap()
+{
+    if (_current == &_buffer[0])
+    {
+        _current = &_buffer[1];
+    }
+    else
+    {
+        _current = &_buffer[0];
     }
 }
