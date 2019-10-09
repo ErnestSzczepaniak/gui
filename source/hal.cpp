@@ -67,9 +67,10 @@ void h::gui::file_read(void * buffer, int size)
     _stream.read((char*)buffer, size);
 }
 
-void h::gui::file_seek(int offset)
+int h::gui::file_seek(int offset)
 {
     _stream.seekg(offset, std::ios::beg);
+    return _stream.tellg();
 }
 
 void h::gui::file_close()

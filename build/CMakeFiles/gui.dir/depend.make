@@ -13,6 +13,13 @@ CMakeFiles/gui.dir/source/hal.cpp.o: ../include/config.h
 CMakeFiles/gui.dir/source/hal.cpp.o: ../include/hal.h
 CMakeFiles/gui.dir/source/hal.cpp.o: ../source/hal.cpp
 
+CMakeFiles/gui.dir/source/loader.cpp.o: ../include/config.h
+CMakeFiles/gui.dir/source/loader.cpp.o: ../include/hal.h
+CMakeFiles/gui.dir/source/loader.cpp.o: ../include/loader.h
+CMakeFiles/gui.dir/source/loader.cpp.o: ../include/pixel.h
+CMakeFiles/gui.dir/source/loader.cpp.o: ../include/texture.h
+CMakeFiles/gui.dir/source/loader.cpp.o: ../source/loader.cpp
+
 CMakeFiles/gui.dir/source/pixel.cpp.o: ../include/pixel.h
 CMakeFiles/gui.dir/source/pixel.cpp.o: ../source/pixel.cpp
 
@@ -21,19 +28,16 @@ CMakeFiles/gui.dir/source/screen.cpp.o: ../include/pixel.h
 CMakeFiles/gui.dir/source/screen.cpp.o: ../include/screen.h
 CMakeFiles/gui.dir/source/screen.cpp.o: ../source/screen.cpp
 
+CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/config.h
 CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/pixel.h
 CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/sprite.h
 CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/texture.h
 CMakeFiles/gui.dir/source/sprite.cpp.o: ../source/sprite.cpp
 
+CMakeFiles/gui.dir/source/texture.cpp.o: ../include/config.h
 CMakeFiles/gui.dir/source/texture.cpp.o: ../include/pixel.h
 CMakeFiles/gui.dir/source/texture.cpp.o: ../include/texture.h
 CMakeFiles/gui.dir/source/texture.cpp.o: ../source/texture.cpp
 
-CMakeFiles/gui.dir/source/texture_manager.cpp.o: ../include/config.h
-CMakeFiles/gui.dir/source/texture_manager.cpp.o: ../include/hal.h
-CMakeFiles/gui.dir/source/texture_manager.cpp.o: ../include/pixel.h
-CMakeFiles/gui.dir/source/texture_manager.cpp.o: ../include/texture.h
-CMakeFiles/gui.dir/source/texture_manager.cpp.o: ../include/texture_manager.h
 CMakeFiles/gui.dir/source/texture_manager.cpp.o: ../source/texture_manager.cpp
 

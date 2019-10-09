@@ -6,17 +6,27 @@
 
 #IncludeRegexTransform: 
 
-../include/pixel.h
+../include/config.h
 
-../include/sprite.h
+../include/hal.h
+
+../include/loader.h
+config.h
+../include/config.h
 texture.h
 ../include/texture.h
 
+../include/pixel.h
+
 ../include/texture.h
+config.h
+../include/config.h
 pixel.h
 ../include/pixel.h
 
-/home/ernest/shared/gui/source/sprite.cpp
-sprite.h
-/home/ernest/shared/gui/source/sprite.h
+/home/en2/Codes/gui/source/loader.cpp
+loader.h
+/home/en2/Codes/gui/source/loader.h
+hal.h
+/home/en2/Codes/gui/source/hal.h
 

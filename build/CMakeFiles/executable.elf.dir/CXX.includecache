@@ -8,35 +8,23 @@
 
 ../include/config.h
 
-../include/display.h
+../include/loader.h
 config.h
 ../include/config.h
 texture.h
 ../include/texture.h
-screen.h
-../include/screen.h
 
 ../include/pixel.h
 
-../include/screen.h
+../include/texture.h
 config.h
 ../include/config.h
 pixel.h
 ../include/pixel.h
 
-../include/texture.h
-pixel.h
-../include/pixel.h
-
-../include/texture_manager.h
+/home/en2/Codes/gui/main.cpp
 texture.h
-../include/texture.h
-config.h
-../include/config.h
-
-/home/ernest/shared/gui/main.cpp
-texture_manager.h
-/home/ernest/shared/gui/texture_manager.h
-display.h
-/home/ernest/shared/gui/display.h
+/home/en2/Codes/gui/texture.h
+loader.h
+/home/en2/Codes/gui/loader.h
 

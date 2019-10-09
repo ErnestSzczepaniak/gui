@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ernest/shared/gui
+CMAKE_SOURCE_DIR = /home/en2/Codes/gui
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ernest/shared/gui/build
+CMAKE_BINARY_DIR = /home/en2/Codes/gui/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ernest/shared/gui/build/CMakeFiles /home/ernest/shared/gui/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/en2/Codes/gui/build/CMakeFiles /home/en2/Codes/gui/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ernest/shared/gui/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/en2/Codes/gui/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -216,6 +216,33 @@ source/hal.s: source/hal.cpp.s
 source/hal.cpp.s:
 	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/hal.cpp.s
 .PHONY : source/hal.cpp.s
+
+source/loader.o: source/loader.cpp.o
+
+.PHONY : source/loader.o
+
+# target to build an object file
+source/loader.cpp.o:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/loader.cpp.o
+.PHONY : source/loader.cpp.o
+
+source/loader.i: source/loader.cpp.i
+
+.PHONY : source/loader.i
+
+# target to preprocess a source file
+source/loader.cpp.i:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/loader.cpp.i
+.PHONY : source/loader.cpp.i
+
+source/loader.s: source/loader.cpp.s
+
+.PHONY : source/loader.s
+
+# target to generate assembly for a file
+source/loader.cpp.s:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/loader.cpp.s
+.PHONY : source/loader.cpp.s
 
 source/pixel.o: source/pixel.cpp.o
 
@@ -371,6 +398,9 @@ help:
 	@echo "... source/hal.o"
 	@echo "... source/hal.i"
 	@echo "... source/hal.s"
+	@echo "... source/loader.o"
+	@echo "... source/loader.i"
+	@echo "... source/loader.s"
 	@echo "... source/pixel.o"
 	@echo "... source/pixel.i"
 	@echo "... source/pixel.s"

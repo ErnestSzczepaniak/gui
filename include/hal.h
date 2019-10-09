@@ -10,7 +10,7 @@ namespace h::gui
 
     bool file_open(const char * path);
     void file_read(void * buffer, int size);
-    void file_seek(int offset);
+    int file_seek(int offset);
     void file_close();
 
     void * memory_create(int size);

@@ -10,43 +10,52 @@ Texture::~Texture()
 
 }
 
-void Texture::pixel(Pixel * value)
+void Texture::pixel(Pixel * pixel, int x, int y)
 {
-    _pixel = value;
+    _pixel[x][y] = *pixel;
 }
 
 Pixel * Texture::pixel(int x, int y)
 {
-    return (x < _width && y < _height) ? &_pixel[_height * (_height - y - 1) + x]
-    : nullptr;
+    return &_pixel[x][y];
 }
 
-void Texture::height(int value)
+void Texture::next(Texture * texture)
 {
-    _height = value;
+    _next = texture;
 }
 
-int Texture::height()
+Texture * Texture::next()
 {
-    return _height;
+    return _next;
 }
 
-void Texture::width(int value)
+void Texture::previous(Texture * texture)
 {
-    _width = value;
+    _previous = texture;
 }
 
-int Texture::width()
+Texture * Texture::previous()
 {
-    return _width;
+    return _previous;
 }
 
-void Texture::path(const char * value)
+void Texture::path(const char * path)
 {
-    _path = value;
+    _path = path;
 }
 
 const char * Texture::path()
 {
     return _path;
+}
+
+void Texture::hash(int hash)
+{
+    _hash = hash;
+}
+
+int Texture::hash()
+{
+    return _hash;
 }

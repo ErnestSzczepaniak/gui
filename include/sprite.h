@@ -9,8 +9,6 @@ public:
     Sprite();
     ~Sprite();
 
-
-
 protected:
     Texture * _texture;
 
