@@ -35,11 +35,6 @@ int main()
 {
    Pixel p;
 
-   p._pixel = 0xff520057;
-
-   auto [r, g, b] = p.as_rgb();
-
-   auto [h, s, l] = p.as_hsl();
 
    Texture_manager manager;
    Display display;
@@ -49,6 +44,8 @@ int main()
    display.init();
    display.draw(texture, 0, 0);
    display.draw(texture, 0, 16);
+   display.draw(texture, 16, 16);
+   display.draw(texture, 32, 32);
 
    while(1);
 }

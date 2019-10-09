@@ -5,6 +5,7 @@ CMakeFiles/gui.dir/source/display.cpp.o: ../include/config.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../include/display.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../include/hal.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../include/pixel.h
+CMakeFiles/gui.dir/source/display.cpp.o: ../include/screen.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../include/texture.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../source/display.cpp
 
@@ -14,6 +15,11 @@ CMakeFiles/gui.dir/source/hal.cpp.o: ../source/hal.cpp
 
 CMakeFiles/gui.dir/source/pixel.cpp.o: ../include/pixel.h
 CMakeFiles/gui.dir/source/pixel.cpp.o: ../source/pixel.cpp
+
+CMakeFiles/gui.dir/source/screen.cpp.o: ../include/config.h
+CMakeFiles/gui.dir/source/screen.cpp.o: ../include/pixel.h
+CMakeFiles/gui.dir/source/screen.cpp.o: ../include/screen.h
+CMakeFiles/gui.dir/source/screen.cpp.o: ../source/screen.cpp
 
 CMakeFiles/gui.dir/source/texture.cpp.o: ../include/pixel.h
 CMakeFiles/gui.dir/source/texture.cpp.o: ../include/texture.h

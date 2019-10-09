@@ -4,11 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/en2/Codes/gui/source/display.cpp" "/home/en2/Codes/gui/build/CMakeFiles/gui.dir/source/display.cpp.o"
-  "/home/en2/Codes/gui/source/hal.cpp" "/home/en2/Codes/gui/build/CMakeFiles/gui.dir/source/hal.cpp.o"
-  "/home/en2/Codes/gui/source/pixel.cpp" "/home/en2/Codes/gui/build/CMakeFiles/gui.dir/source/pixel.cpp.o"
-  "/home/en2/Codes/gui/source/texture.cpp" "/home/en2/Codes/gui/build/CMakeFiles/gui.dir/source/texture.cpp.o"
-  "/home/en2/Codes/gui/source/texture_manager.cpp" "/home/en2/Codes/gui/build/CMakeFiles/gui.dir/source/texture_manager.cpp.o"
+  "/home/ernest/shared/gui/source/display.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/display.cpp.o"
+  "/home/ernest/shared/gui/source/hal.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/hal.cpp.o"
+  "/home/ernest/shared/gui/source/pixel.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/pixel.cpp.o"
+  "/home/ernest/shared/gui/source/screen.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/screen.cpp.o"
+  "/home/ernest/shared/gui/source/texture.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/texture.cpp.o"
+  "/home/ernest/shared/gui/source/texture_manager.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/texture_manager.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

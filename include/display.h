@@ -3,13 +3,10 @@
 
 #include "config.h"
 #include "texture.h"
+#include "screen.h"
 
 class Display
 {
-    struct Screen 
-    {
-        unsigned int space[screen_resolution_y][screen_resolution_x] = {0};
-    };
 
 public:
     Display();
@@ -19,10 +16,11 @@ public:
     void draw(Texture * texture, int x, int y);
 
 protected:
-    Screen _buffer[2];
+    Screen _screen[2];
     Screen * _current;
 
     void _swap();
+    void _clone();
 };
 
 #endif

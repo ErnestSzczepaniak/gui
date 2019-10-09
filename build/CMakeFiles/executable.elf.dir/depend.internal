@@ -5,6 +5,7 @@ CMakeFiles/executable.elf.dir/main.cpp.o
  ../include/config.h
  ../include/display.h
  ../include/pixel.h
+ ../include/screen.h
  ../include/texture.h
  ../include/texture_manager.h
- /home/en2/Codes/gui/main.cpp
+ /home/ernest/shared/gui/main.cpp

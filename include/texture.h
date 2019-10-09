@@ -10,7 +10,7 @@ public:
     ~Texture();
 
     void pixel(Pixel * value);
-    Pixel * pixel();
+    Pixel * pixel(int x, int y);
 
     void height(int value);
     int height();

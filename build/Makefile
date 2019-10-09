@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/en2/Codes/gui
+CMAKE_SOURCE_DIR = /home/ernest/shared/gui
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/en2/Codes/gui/build
+CMAKE_BINARY_DIR = /home/ernest/shared/gui/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/en2/Codes/gui/build/CMakeFiles /home/en2/Codes/gui/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ernest/shared/gui/build/CMakeFiles /home/ernest/shared/gui/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/en2/Codes/gui/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ernest/shared/gui/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -244,6 +244,33 @@ source/pixel.cpp.s:
 	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/pixel.cpp.s
 .PHONY : source/pixel.cpp.s
 
+source/screen.o: source/screen.cpp.o
+
+.PHONY : source/screen.o
+
+# target to build an object file
+source/screen.cpp.o:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/screen.cpp.o
+.PHONY : source/screen.cpp.o
+
+source/screen.i: source/screen.cpp.i
+
+.PHONY : source/screen.i
+
+# target to preprocess a source file
+source/screen.cpp.i:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/screen.cpp.i
+.PHONY : source/screen.cpp.i
+
+source/screen.s: source/screen.cpp.s
+
+.PHONY : source/screen.s
+
+# target to generate assembly for a file
+source/screen.cpp.s:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/screen.cpp.s
+.PHONY : source/screen.cpp.s
+
 source/texture.o: source/texture.cpp.o
 
 .PHONY : source/texture.o
@@ -320,6 +347,9 @@ help:
 	@echo "... source/pixel.o"
 	@echo "... source/pixel.i"
 	@echo "... source/pixel.s"
+	@echo "... source/screen.o"
+	@echo "... source/screen.i"
+	@echo "... source/screen.s"
 	@echo "... source/texture.o"
 	@echo "... source/texture.i"
 	@echo "... source/texture.s"

@@ -4,6 +4,7 @@
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/config.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/display.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/pixel.h
+CMakeFiles/executable.elf.dir/main.cpp.o: ../include/screen.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/texture.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/texture_manager.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../main.cpp

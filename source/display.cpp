@@ -3,7 +3,7 @@
 
 Display::Display()
 {
-    _current = &_buffer[1];
+    _current = &_screen[1];
 }
 
 Display::~Display()
@@ -20,17 +20,20 @@ void Display::draw(Texture * texture, int x, int y)
 {
     if (((x + texture->width()) < screen_resolution_x) && ((y + texture->height()) < screen_resolution_y))
     {
+        _clone();
+
         for (int i = 0; i < texture->height(); i++)
         {
             for (int j = 0; j < texture->width(); j++)
             {
-                auto * pixel = &texture->pixel()[i * texture->width() + j];
+                auto * pixel = texture->pixel(j, i);
 
-                _current->space[y + texture->height() - i - 1][x + j] = pixel->operator unsigned int();
+                _current->put(pixel, x + j, y + i);
             }
         }
 
         h::gui::display_pointer((unsigned int *) _current);
+
         _swap();
     }
 }
@@ -39,12 +42,10 @@ void Display::draw(Texture * texture, int x, int y)
 
 void Display::_swap()
 {
-    if (_current == &_buffer[0])
-    {
-        _current = &_buffer[1];
-    }
-    else
-    {
-        _current = &_buffer[0];
-    }
+    _current = (_current == &_screen[0]) ? &_screen[1] : &_screen[0];
+}
+
+void Display::_clone()
+{
+   _current == &_screen[0] ? _screen[0] = _screen[1] : _screen[1] = _screen[0];
 }
