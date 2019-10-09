@@ -28,6 +28,12 @@ void Display::draw(Texture * texture, int x, int y)
             {
                 auto * pixel = texture->pixel(j, i);
 
+                if (pixel->green() != 0)
+                {
+                    auto * s = (unsigned int *) pixel;
+                    int k = 2;
+                }
+
                 _current->put(pixel, x + j, y + i);
             }
         }

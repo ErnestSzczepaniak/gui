@@ -31,6 +31,7 @@
 //    //j1->draw(x + 160, y + 480);
 // }
 
+
 int main()
 {
    Pixel p;

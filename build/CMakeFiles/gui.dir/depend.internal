@@ -21,6 +21,11 @@ CMakeFiles/gui.dir/source/screen.cpp.o
  ../include/pixel.h
  ../include/screen.h
  /home/ernest/shared/gui/source/screen.cpp
+CMakeFiles/gui.dir/source/sprite.cpp.o
+ ../include/pixel.h
+ ../include/sprite.h
+ ../include/texture.h
+ /home/ernest/shared/gui/source/sprite.cpp
 CMakeFiles/gui.dir/source/texture.cpp.o
  ../include/pixel.h
  ../include/texture.h

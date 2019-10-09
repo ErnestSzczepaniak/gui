@@ -21,6 +21,11 @@ CMakeFiles/gui.dir/source/screen.cpp.o: ../include/pixel.h
 CMakeFiles/gui.dir/source/screen.cpp.o: ../include/screen.h
 CMakeFiles/gui.dir/source/screen.cpp.o: ../source/screen.cpp
 
+CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/pixel.h
+CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/sprite.h
+CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/texture.h
+CMakeFiles/gui.dir/source/sprite.cpp.o: ../source/sprite.cpp
+
 CMakeFiles/gui.dir/source/texture.cpp.o: ../include/pixel.h
 CMakeFiles/gui.dir/source/texture.cpp.o: ../include/texture.h
 CMakeFiles/gui.dir/source/texture.cpp.o: ../source/texture.cpp

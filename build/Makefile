@@ -271,6 +271,33 @@ source/screen.cpp.s:
 	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/screen.cpp.s
 .PHONY : source/screen.cpp.s
 
+source/sprite.o: source/sprite.cpp.o
+
+.PHONY : source/sprite.o
+
+# target to build an object file
+source/sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/sprite.cpp.o
+.PHONY : source/sprite.cpp.o
+
+source/sprite.i: source/sprite.cpp.i
+
+.PHONY : source/sprite.i
+
+# target to preprocess a source file
+source/sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/sprite.cpp.i
+.PHONY : source/sprite.cpp.i
+
+source/sprite.s: source/sprite.cpp.s
+
+.PHONY : source/sprite.s
+
+# target to generate assembly for a file
+source/sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/sprite.cpp.s
+.PHONY : source/sprite.cpp.s
+
 source/texture.o: source/texture.cpp.o
 
 .PHONY : source/texture.o
@@ -350,6 +377,9 @@ help:
 	@echo "... source/screen.o"
 	@echo "... source/screen.i"
 	@echo "... source/screen.s"
+	@echo "... source/sprite.o"
+	@echo "... source/sprite.i"
+	@echo "... source/sprite.s"
 	@echo "... source/texture.o"
 	@echo "... source/texture.i"
 	@echo "... source/texture.s"

@@ -6,39 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../include/config.h
+../include/pixel.h
 
-../include/display.h
-config.h
-../include/config.h
+../include/sprite.h
 texture.h
 ../include/texture.h
-screen.h
-../include/screen.h
-
-../include/hal.h
-
-../include/pixel.h
-
-../include/screen.h
-config.h
-../include/config.h
-pixel.h
-../include/pixel.h
 
 ../include/texture.h
 pixel.h
 ../include/pixel.h
 
-/home/ernest/shared/gui/source/display.cpp
-display.h
-/home/ernest/shared/gui/source/display.h
-hal.h
-/home/ernest/shared/gui/source/hal.h
-
-/home/ernest/shared/gui/source/screen.cpp
-screen.h
-/home/ernest/shared/gui/source/screen.h
-string.h
-/home/ernest/shared/gui/source/string.h
+/home/ernest/shared/gui/source/sprite.cpp
+sprite.h
+/home/ernest/shared/gui/source/sprite.h
 

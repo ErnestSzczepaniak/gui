@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ernest/shared/gui/source/hal.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/hal.cpp.o"
   "/home/ernest/shared/gui/source/pixel.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/pixel.cpp.o"
   "/home/ernest/shared/gui/source/screen.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/screen.cpp.o"
+  "/home/ernest/shared/gui/source/sprite.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/sprite.cpp.o"
   "/home/ernest/shared/gui/source/texture.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/texture.cpp.o"
   "/home/ernest/shared/gui/source/texture_manager.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/texture_manager.cpp.o"
   )
