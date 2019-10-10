@@ -1,4 +1,4 @@
-/home/en2/Codes/gui/build/CMakeFiles/rebuild_cache.dir
-/home/en2/Codes/gui/build/CMakeFiles/edit_cache.dir
-/home/en2/Codes/gui/build/CMakeFiles/gui.dir
-/home/en2/Codes/gui/build/CMakeFiles/executable.elf.dir
+/home/ernest/shared/gui/build/CMakeFiles/rebuild_cache.dir
+/home/ernest/shared/gui/build/CMakeFiles/edit_cache.dir
+/home/ernest/shared/gui/build/CMakeFiles/gui.dir
+/home/ernest/shared/gui/build/CMakeFiles/executable.elf.dir

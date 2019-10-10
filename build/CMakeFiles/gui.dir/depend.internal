@@ -8,36 +8,36 @@ CMakeFiles/gui.dir/source/display.cpp.o
  ../include/pixel.h
  ../include/screen.h
  ../include/texture.h
- /home/en2/Codes/gui/source/display.cpp
+ /home/ernest/shared/gui/source/display.cpp
 CMakeFiles/gui.dir/source/hal.cpp.o
  ../include/config.h
  ../include/hal.h
- /home/en2/Codes/gui/source/hal.cpp
+ /home/ernest/shared/gui/source/hal.cpp
 CMakeFiles/gui.dir/source/loader.cpp.o
  ../include/config.h
  ../include/hal.h
  ../include/loader.h
  ../include/pixel.h
  ../include/texture.h
- /home/en2/Codes/gui/source/loader.cpp
+ /home/ernest/shared/gui/source/loader.cpp
 CMakeFiles/gui.dir/source/pixel.cpp.o
  ../include/pixel.h
- /home/en2/Codes/gui/source/pixel.cpp
+ /home/ernest/shared/gui/source/pixel.cpp
 CMakeFiles/gui.dir/source/screen.cpp.o
  ../include/config.h
  ../include/pixel.h
  ../include/screen.h
- /home/en2/Codes/gui/source/screen.cpp
+ /home/ernest/shared/gui/source/screen.cpp
 CMakeFiles/gui.dir/source/sprite.cpp.o
  ../include/config.h
  ../include/pixel.h
  ../include/sprite.h
  ../include/texture.h
- /home/en2/Codes/gui/source/sprite.cpp
+ /home/ernest/shared/gui/source/sprite.cpp
 CMakeFiles/gui.dir/source/texture.cpp.o
  ../include/config.h
  ../include/pixel.h
  ../include/texture.h
- /home/en2/Codes/gui/source/texture.cpp
+ /home/ernest/shared/gui/source/texture.cpp
 CMakeFiles/gui.dir/source/texture_manager.cpp.o
- /home/en2/Codes/gui/source/texture_manager.cpp
+ /home/ernest/shared/gui/source/texture_manager.cpp

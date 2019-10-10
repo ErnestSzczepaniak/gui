@@ -4,7 +4,7 @@
 #include "config.h"
 #include "texture.h"
 
-struct Texture_pack
+struct Model
 {
     Texture * texture;
     int count;
@@ -31,7 +31,14 @@ struct [[gnu::packed]] Header
     unsigned int size_raw;
 };
 
-struct Texture_info
+struct Model_info
+{
+    int rows;
+    int cols;
+    int count;
+};
+
+struct File_info
 {
     int width;
     int height;
@@ -47,18 +54,17 @@ public:
     Texture * load(const char * path, int index);
 
 protected:
-    Texture_info _texture_info();
+    File_info _file_info();
+    Model_info _model_info(int width, int height);
 
     Texture_cell * _cell_empty_find();
-    Texture * _texture_find(int hash);
-    int _hash_calculate(const char * path, int count);
+
 
     void _load_from_offset(int offset);
 
-
 private:
-    Texture_cell _cell[loader_buffer_size];
-    unsigned char _buffer[loader_buffer_size] = {0};
+    Texture_cell _cell[loader_cell_size];
+    unsigned char _buffer[texture_size_x_bytes];
 };
 
 #endif

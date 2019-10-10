@@ -12,12 +12,12 @@ Texture::~Texture()
 
 void Texture::pixel(Pixel * pixel, int x, int y)
 {
-    _pixel[x][y] = *pixel;
+    _pixel[y][x] = *pixel;
 }
 
 Pixel * Texture::pixel(int x, int y)
 {
-    return &_pixel[x][y];
+    return &_pixel[y][x];
 }
 
 void Texture::next(Texture * texture)

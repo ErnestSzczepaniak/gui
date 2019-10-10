@@ -28,7 +28,7 @@ public:
 protected:
 
 private:
-    Pixel _pixel[screen_resolution_grid][screen_resolution_grid];
+    Pixel _pixel[texture_size_y_pixels][texture_size_x_pixels];
 
     Texture * _next;
     Texture * _previous;

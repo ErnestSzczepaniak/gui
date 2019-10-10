@@ -3,7 +3,9 @@
 
 CMakeFiles/executable.elf.dir/main.cpp.o
  ../include/config.h
+ ../include/display.h
  ../include/loader.h
  ../include/pixel.h
+ ../include/screen.h
  ../include/texture.h
- /home/en2/Codes/gui/main.cpp
+ /home/ernest/shared/gui/main.cpp

@@ -8,6 +8,14 @@
 
 ../include/config.h
 
+../include/display.h
+config.h
+../include/config.h
+texture.h
+../include/texture.h
+screen.h
+../include/screen.h
+
 ../include/loader.h
 config.h
 ../include/config.h
@@ -16,15 +24,23 @@ texture.h
 
 ../include/pixel.h
 
+../include/screen.h
+config.h
+../include/config.h
+pixel.h
+../include/pixel.h
+
 ../include/texture.h
 config.h
 ../include/config.h
 pixel.h
 ../include/pixel.h
 
-/home/en2/Codes/gui/main.cpp
+/home/ernest/shared/gui/main.cpp
 texture.h
-/home/en2/Codes/gui/texture.h
+/home/ernest/shared/gui/texture.h
 loader.h
-/home/en2/Codes/gui/loader.h
+/home/ernest/shared/gui/loader.h
+display.h
+/home/ernest/shared/gui/display.h
 
