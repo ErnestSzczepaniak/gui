@@ -43,4 +43,16 @@ loader.h
 /home/ernest/shared/gui/loader.h
 display.h
 /home/ernest/shared/gui/display.h
+linux/fb.h
+-
+stdio.h
+-
+stdint.h
+-
+fcntl.h
+-
+sys/mman.h
+-
+sys/ioctl.h
+-
 

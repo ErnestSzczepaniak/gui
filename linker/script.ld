@@ -1,6 +1,7 @@
 MEMORY
 {
   	SDRAM (rwx) : ORIGIN = 0x0, LENGTH = __memory_sdram_size
+	OCRAM (rwx) : ORIGIN = 0xffff0000, LENGTH = 64K
 }
 
 ENTRY(__vector)
@@ -35,6 +36,11 @@ SECTIONS
 
 		KEEP(*(.eh_frame*))
 	} > SDRAM
+
+	.ocram
+	{	
+		*(.ocram*)
+	} > OCRAM
 
 	.ARM.extab : ALIGN_WITH_INPUT
 	{
