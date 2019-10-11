@@ -11,10 +11,18 @@
 ../include/display.h
 config.h
 ../include/config.h
-texture.h
-../include/texture.h
+sprite.h
+../include/sprite.h
 screen.h
 ../include/screen.h
+
+../include/effect.h
+texture.h
+../include/texture.h
+
+../include/effect_recolor.h
+effect.h
+../include/effect.h
 
 ../include/loader.h
 config.h
@@ -30,6 +38,14 @@ config.h
 pixel.h
 ../include/pixel.h
 
+../include/sprite.h
+config.h
+../include/config.h
+texture.h
+../include/texture.h
+effect.h
+../include/effect.h
+
 ../include/texture.h
 config.h
 ../include/config.h
@@ -43,16 +59,8 @@ loader.h
 /home/ernest/shared/gui/loader.h
 display.h
 /home/ernest/shared/gui/display.h
-linux/fb.h
--
-stdio.h
--
-stdint.h
--
-fcntl.h
--
-sys/mman.h
--
-sys/ioctl.h
--
+effect_recolor.h
+/home/ernest/shared/gui/effect_recolor.h
+sprite.h
+/home/ernest/shared/gui/sprite.h
 

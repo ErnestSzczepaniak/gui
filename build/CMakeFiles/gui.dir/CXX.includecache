@@ -8,13 +8,13 @@
 
 ../include/config.h
 
-../include/hal.h
-
-../include/loader.h
-config.h
-../include/config.h
+../include/effect.h
 texture.h
 ../include/texture.h
+
+../include/effect_recolor.h
+effect.h
+../include/effect.h
 
 ../include/pixel.h
 
@@ -24,11 +24,7 @@ config.h
 pixel.h
 ../include/pixel.h
 
-/home/ernest/shared/gui/source/loader.cpp
-loader.h
-/home/ernest/shared/gui/source/loader.h
-hal.h
-/home/ernest/shared/gui/source/hal.h
-string.h
-/home/ernest/shared/gui/source/string.h
+/home/ernest/shared/gui/source/effect_recolor.cpp
+effect_recolor.h
+/home/ernest/shared/gui/source/effect_recolor.h
 

@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ernest/shared/gui/source/display.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/display.cpp.o"
+  "/home/ernest/shared/gui/source/effect.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/effect.cpp.o"
+  "/home/ernest/shared/gui/source/effect_recolor.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/effect_recolor.cpp.o"
   "/home/ernest/shared/gui/source/hal.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/hal.cpp.o"
   "/home/ernest/shared/gui/source/loader.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/loader.cpp.o"
   "/home/ernest/shared/gui/source/pixel.cpp" "/home/ernest/shared/gui/build/CMakeFiles/gui.dir/source/pixel.cpp.o"

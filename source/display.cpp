@@ -16,10 +16,20 @@ void Display::init()
     h::gui::display_init();
 }
 
-void Display::draw(Texture * texture, int x, int y)
+void Display::draw(Sprite * sprite)
 {
-
     _clone();
+
+    Texture * texture;
+    
+    if (auto * effect = sprite->effect(); effect != nullptr)
+    {
+        texture = effect->apply(sprite->texture());
+    }
+    else
+    {
+        texture = sprite->texture();
+    }
 
     for (int i = 0; i < 16; i++)
     {
@@ -27,7 +37,7 @@ void Display::draw(Texture * texture, int x, int y)
         {
             auto * pixel = texture->pixel(j, i);
 
-            _current->put(pixel, x + j, y + i);
+            _current->put(pixel, sprite->pos_x() + j, sprite->pos_y() + i);
         }
     }
 

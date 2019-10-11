@@ -3,11 +3,26 @@
 
 CMakeFiles/gui.dir/source/display.cpp.o: ../include/config.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../include/display.h
+CMakeFiles/gui.dir/source/display.cpp.o: ../include/effect.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../include/hal.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../include/pixel.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../include/screen.h
+CMakeFiles/gui.dir/source/display.cpp.o: ../include/sprite.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../include/texture.h
 CMakeFiles/gui.dir/source/display.cpp.o: ../source/display.cpp
+
+CMakeFiles/gui.dir/source/effect.cpp.o: ../include/config.h
+CMakeFiles/gui.dir/source/effect.cpp.o: ../include/effect.h
+CMakeFiles/gui.dir/source/effect.cpp.o: ../include/pixel.h
+CMakeFiles/gui.dir/source/effect.cpp.o: ../include/texture.h
+CMakeFiles/gui.dir/source/effect.cpp.o: ../source/effect.cpp
+
+CMakeFiles/gui.dir/source/effect_recolor.cpp.o: ../include/config.h
+CMakeFiles/gui.dir/source/effect_recolor.cpp.o: ../include/effect.h
+CMakeFiles/gui.dir/source/effect_recolor.cpp.o: ../include/effect_recolor.h
+CMakeFiles/gui.dir/source/effect_recolor.cpp.o: ../include/pixel.h
+CMakeFiles/gui.dir/source/effect_recolor.cpp.o: ../include/texture.h
+CMakeFiles/gui.dir/source/effect_recolor.cpp.o: ../source/effect_recolor.cpp
 
 CMakeFiles/gui.dir/source/hal.cpp.o: ../include/config.h
 CMakeFiles/gui.dir/source/hal.cpp.o: ../include/hal.h
@@ -29,6 +44,7 @@ CMakeFiles/gui.dir/source/screen.cpp.o: ../include/screen.h
 CMakeFiles/gui.dir/source/screen.cpp.o: ../source/screen.cpp
 
 CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/config.h
+CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/effect.h
 CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/pixel.h
 CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/sprite.h
 CMakeFiles/gui.dir/source/sprite.cpp.o: ../include/texture.h

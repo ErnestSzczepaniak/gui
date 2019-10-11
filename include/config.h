@@ -16,4 +16,6 @@ constexpr int texture_size_y_bytes = texture_size_y_pixels * 4;
 constexpr int texture_size_pixels = texture_size_x_pixels * texture_size_y_pixels;
 constexpr int texture_size_bytes = texture_size_pixels * 4;
 
+constexpr int effect_buffer_size = 8;
+
 #endif

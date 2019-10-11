@@ -2,7 +2,7 @@
 #define _display_h
 
 #include "config.h"
-#include "texture.h"
+#include "sprite.h"
 #include "screen.h"
 
 class Display
@@ -13,7 +13,7 @@ public:
     ~Display();
 
     void init();
-    void draw(Texture * texture, int x, int y);
+    void draw(Sprite * sprite);
 
 protected:
     Screen _screen[2];

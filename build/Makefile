@@ -190,6 +190,60 @@ source/display.cpp.s:
 	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/display.cpp.s
 .PHONY : source/display.cpp.s
 
+source/effect.o: source/effect.cpp.o
+
+.PHONY : source/effect.o
+
+# target to build an object file
+source/effect.cpp.o:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/effect.cpp.o
+.PHONY : source/effect.cpp.o
+
+source/effect.i: source/effect.cpp.i
+
+.PHONY : source/effect.i
+
+# target to preprocess a source file
+source/effect.cpp.i:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/effect.cpp.i
+.PHONY : source/effect.cpp.i
+
+source/effect.s: source/effect.cpp.s
+
+.PHONY : source/effect.s
+
+# target to generate assembly for a file
+source/effect.cpp.s:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/effect.cpp.s
+.PHONY : source/effect.cpp.s
+
+source/effect_recolor.o: source/effect_recolor.cpp.o
+
+.PHONY : source/effect_recolor.o
+
+# target to build an object file
+source/effect_recolor.cpp.o:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/effect_recolor.cpp.o
+.PHONY : source/effect_recolor.cpp.o
+
+source/effect_recolor.i: source/effect_recolor.cpp.i
+
+.PHONY : source/effect_recolor.i
+
+# target to preprocess a source file
+source/effect_recolor.cpp.i:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/effect_recolor.cpp.i
+.PHONY : source/effect_recolor.cpp.i
+
+source/effect_recolor.s: source/effect_recolor.cpp.s
+
+.PHONY : source/effect_recolor.s
+
+# target to generate assembly for a file
+source/effect_recolor.cpp.s:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/effect_recolor.cpp.s
+.PHONY : source/effect_recolor.cpp.s
+
 source/hal.o: source/hal.cpp.o
 
 .PHONY : source/hal.o
@@ -395,6 +449,12 @@ help:
 	@echo "... source/display.o"
 	@echo "... source/display.i"
 	@echo "... source/display.s"
+	@echo "... source/effect.o"
+	@echo "... source/effect.i"
+	@echo "... source/effect.s"
+	@echo "... source/effect_recolor.o"
+	@echo "... source/effect_recolor.i"
+	@echo "... source/effect_recolor.s"
 	@echo "... source/hal.o"
 	@echo "... source/hal.i"
 	@echo "... source/hal.s"

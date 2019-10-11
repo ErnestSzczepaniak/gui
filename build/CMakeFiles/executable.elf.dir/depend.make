@@ -3,9 +3,12 @@
 
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/config.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/display.h
+CMakeFiles/executable.elf.dir/main.cpp.o: ../include/effect.h
+CMakeFiles/executable.elf.dir/main.cpp.o: ../include/effect_recolor.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/loader.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/pixel.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/screen.h
+CMakeFiles/executable.elf.dir/main.cpp.o: ../include/sprite.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../include/texture.h
 CMakeFiles/executable.elf.dir/main.cpp.o: ../main.cpp
 
