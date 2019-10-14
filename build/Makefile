@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ernest/shared/gui
+CMAKE_SOURCE_DIR = /home/en2/Codes/gui
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ernest/shared/gui/build
+CMAKE_BINARY_DIR = /home/en2/Codes/gui/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ernest/shared/gui/build/CMakeFiles /home/ernest/shared/gui/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/en2/Codes/gui/build/CMakeFiles /home/en2/Codes/gui/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ernest/shared/gui/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/en2/Codes/gui/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -190,33 +190,6 @@ source/display.cpp.s:
 	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/display.cpp.s
 .PHONY : source/display.cpp.s
 
-source/effect.o: source/effect.cpp.o
-
-.PHONY : source/effect.o
-
-# target to build an object file
-source/effect.cpp.o:
-	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/effect.cpp.o
-.PHONY : source/effect.cpp.o
-
-source/effect.i: source/effect.cpp.i
-
-.PHONY : source/effect.i
-
-# target to preprocess a source file
-source/effect.cpp.i:
-	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/effect.cpp.i
-.PHONY : source/effect.cpp.i
-
-source/effect.s: source/effect.cpp.s
-
-.PHONY : source/effect.s
-
-# target to generate assembly for a file
-source/effect.cpp.s:
-	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/effect.cpp.s
-.PHONY : source/effect.cpp.s
-
 source/effect_recolor.o: source/effect_recolor.cpp.o
 
 .PHONY : source/effect_recolor.o
@@ -243,6 +216,33 @@ source/effect_recolor.s: source/effect_recolor.cpp.s
 source/effect_recolor.cpp.s:
 	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/effect_recolor.cpp.s
 .PHONY : source/effect_recolor.cpp.s
+
+source/filter.o: source/filter.cpp.o
+
+.PHONY : source/filter.o
+
+# target to build an object file
+source/filter.cpp.o:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/filter.cpp.o
+.PHONY : source/filter.cpp.o
+
+source/filter.i: source/filter.cpp.i
+
+.PHONY : source/filter.i
+
+# target to preprocess a source file
+source/filter.cpp.i:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/filter.cpp.i
+.PHONY : source/filter.cpp.i
+
+source/filter.s: source/filter.cpp.s
+
+.PHONY : source/filter.s
+
+# target to generate assembly for a file
+source/filter.cpp.s:
+	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/filter.cpp.s
+.PHONY : source/filter.cpp.s
 
 source/hal.o: source/hal.cpp.o
 
@@ -406,33 +406,6 @@ source/texture.cpp.s:
 	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/texture.cpp.s
 .PHONY : source/texture.cpp.s
 
-source/texture_manager.o: source/texture_manager.cpp.o
-
-.PHONY : source/texture_manager.o
-
-# target to build an object file
-source/texture_manager.cpp.o:
-	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/texture_manager.cpp.o
-.PHONY : source/texture_manager.cpp.o
-
-source/texture_manager.i: source/texture_manager.cpp.i
-
-.PHONY : source/texture_manager.i
-
-# target to preprocess a source file
-source/texture_manager.cpp.i:
-	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/texture_manager.cpp.i
-.PHONY : source/texture_manager.cpp.i
-
-source/texture_manager.s: source/texture_manager.cpp.s
-
-.PHONY : source/texture_manager.s
-
-# target to generate assembly for a file
-source/texture_manager.cpp.s:
-	$(MAKE) -f CMakeFiles/gui.dir/build.make CMakeFiles/gui.dir/source/texture_manager.cpp.s
-.PHONY : source/texture_manager.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -449,12 +422,12 @@ help:
 	@echo "... source/display.o"
 	@echo "... source/display.i"
 	@echo "... source/display.s"
-	@echo "... source/effect.o"
-	@echo "... source/effect.i"
-	@echo "... source/effect.s"
 	@echo "... source/effect_recolor.o"
 	@echo "... source/effect_recolor.i"
 	@echo "... source/effect_recolor.s"
+	@echo "... source/filter.o"
+	@echo "... source/filter.i"
+	@echo "... source/filter.s"
 	@echo "... source/hal.o"
 	@echo "... source/hal.i"
 	@echo "... source/hal.s"
@@ -473,9 +446,6 @@ help:
 	@echo "... source/texture.o"
 	@echo "... source/texture.i"
 	@echo "... source/texture.s"
-	@echo "... source/texture_manager.o"
-	@echo "... source/texture_manager.i"
-	@echo "... source/texture_manager.s"
 .PHONY : help
 
 

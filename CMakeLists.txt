@@ -103,7 +103,7 @@ if (CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
     )
     
     #input_libraries
-    target_link_libraries(executable.elf PRIVATE ${PROJECT_NAME} pthread allegro)
+    target_link_libraries(executable.elf PRIVATE ${PROJECT_NAME} pthread)
     target_link_libraries(executable.elf PRIVATE ${library_files})
 
     #external_libraries

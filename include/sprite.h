@@ -4,6 +4,7 @@
 #include "config.h"
 #include "texture.h"
 #include "effect.h"
+#include "filter.h"
 
 class Sprite
 {
@@ -11,23 +12,27 @@ public:
     Sprite();
     ~Sprite();
 
-    void pos_x(int pos_x);
+    Sprite & pos_x(int pos_x);
     int pos_x();
 
-    void pos_y(int pos_y);
+    Sprite & pos_y(int pos_y);
     int pos_y();
 
-    void texture(Texture * texture);
+    Sprite & texture(Texture * texture);
     Texture * texture();
 
-    void effect(Effect * effect);
+    Sprite & effect(Effect * effect);
     Effect * effect();
+
+    Sprite & filter(Filter * filter);
+    Filter * filter();
 
 protected:
 
 private:
     Texture * _texture;
     Effect * _effect;
+    Filter * _filter;
 
     int _pos_x;
     int _pos_y;

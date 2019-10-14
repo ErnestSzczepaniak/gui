@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ernest/shared/gui
+CMAKE_SOURCE_DIR = /home/en2/Codes/gui
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ernest/shared/gui/build
+CMAKE_BINARY_DIR = /home/en2/Codes/gui/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gui.dir/depend.make
@@ -59,163 +59,148 @@ include CMakeFiles/gui.dir/flags.make
 
 CMakeFiles/gui.dir/source/display.cpp.o: CMakeFiles/gui.dir/flags.make
 CMakeFiles/gui.dir/source/display.cpp.o: ../source/display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gui.dir/source/display.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/display.cpp.o -c /home/ernest/shared/gui/source/display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/en2/Codes/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gui.dir/source/display.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/display.cpp.o -c /home/en2/Codes/gui/source/display.cpp
 
 CMakeFiles/gui.dir/source/display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/display.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ernest/shared/gui/source/display.cpp > CMakeFiles/gui.dir/source/display.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/en2/Codes/gui/source/display.cpp > CMakeFiles/gui.dir/source/display.cpp.i
 
 CMakeFiles/gui.dir/source/display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/display.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ernest/shared/gui/source/display.cpp -o CMakeFiles/gui.dir/source/display.cpp.s
-
-CMakeFiles/gui.dir/source/effect.cpp.o: CMakeFiles/gui.dir/flags.make
-CMakeFiles/gui.dir/source/effect.cpp.o: ../source/effect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gui.dir/source/effect.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/effect.cpp.o -c /home/ernest/shared/gui/source/effect.cpp
-
-CMakeFiles/gui.dir/source/effect.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/effect.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ernest/shared/gui/source/effect.cpp > CMakeFiles/gui.dir/source/effect.cpp.i
-
-CMakeFiles/gui.dir/source/effect.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/effect.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ernest/shared/gui/source/effect.cpp -o CMakeFiles/gui.dir/source/effect.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/en2/Codes/gui/source/display.cpp -o CMakeFiles/gui.dir/source/display.cpp.s
 
 CMakeFiles/gui.dir/source/effect_recolor.cpp.o: CMakeFiles/gui.dir/flags.make
 CMakeFiles/gui.dir/source/effect_recolor.cpp.o: ../source/effect_recolor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gui.dir/source/effect_recolor.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/effect_recolor.cpp.o -c /home/ernest/shared/gui/source/effect_recolor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/en2/Codes/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gui.dir/source/effect_recolor.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/effect_recolor.cpp.o -c /home/en2/Codes/gui/source/effect_recolor.cpp
 
 CMakeFiles/gui.dir/source/effect_recolor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/effect_recolor.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ernest/shared/gui/source/effect_recolor.cpp > CMakeFiles/gui.dir/source/effect_recolor.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/en2/Codes/gui/source/effect_recolor.cpp > CMakeFiles/gui.dir/source/effect_recolor.cpp.i
 
 CMakeFiles/gui.dir/source/effect_recolor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/effect_recolor.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ernest/shared/gui/source/effect_recolor.cpp -o CMakeFiles/gui.dir/source/effect_recolor.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/en2/Codes/gui/source/effect_recolor.cpp -o CMakeFiles/gui.dir/source/effect_recolor.cpp.s
+
+CMakeFiles/gui.dir/source/filter.cpp.o: CMakeFiles/gui.dir/flags.make
+CMakeFiles/gui.dir/source/filter.cpp.o: ../source/filter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/en2/Codes/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gui.dir/source/filter.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/filter.cpp.o -c /home/en2/Codes/gui/source/filter.cpp
+
+CMakeFiles/gui.dir/source/filter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/filter.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/en2/Codes/gui/source/filter.cpp > CMakeFiles/gui.dir/source/filter.cpp.i
+
+CMakeFiles/gui.dir/source/filter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/filter.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/en2/Codes/gui/source/filter.cpp -o CMakeFiles/gui.dir/source/filter.cpp.s
 
 CMakeFiles/gui.dir/source/hal.cpp.o: CMakeFiles/gui.dir/flags.make
 CMakeFiles/gui.dir/source/hal.cpp.o: ../source/hal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gui.dir/source/hal.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/hal.cpp.o -c /home/ernest/shared/gui/source/hal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/en2/Codes/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gui.dir/source/hal.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/hal.cpp.o -c /home/en2/Codes/gui/source/hal.cpp
 
 CMakeFiles/gui.dir/source/hal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/hal.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ernest/shared/gui/source/hal.cpp > CMakeFiles/gui.dir/source/hal.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/en2/Codes/gui/source/hal.cpp > CMakeFiles/gui.dir/source/hal.cpp.i
 
 CMakeFiles/gui.dir/source/hal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/hal.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ernest/shared/gui/source/hal.cpp -o CMakeFiles/gui.dir/source/hal.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/en2/Codes/gui/source/hal.cpp -o CMakeFiles/gui.dir/source/hal.cpp.s
 
 CMakeFiles/gui.dir/source/loader.cpp.o: CMakeFiles/gui.dir/flags.make
 CMakeFiles/gui.dir/source/loader.cpp.o: ../source/loader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gui.dir/source/loader.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/loader.cpp.o -c /home/ernest/shared/gui/source/loader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/en2/Codes/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gui.dir/source/loader.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/loader.cpp.o -c /home/en2/Codes/gui/source/loader.cpp
 
 CMakeFiles/gui.dir/source/loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/loader.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ernest/shared/gui/source/loader.cpp > CMakeFiles/gui.dir/source/loader.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/en2/Codes/gui/source/loader.cpp > CMakeFiles/gui.dir/source/loader.cpp.i
 
 CMakeFiles/gui.dir/source/loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/loader.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ernest/shared/gui/source/loader.cpp -o CMakeFiles/gui.dir/source/loader.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/en2/Codes/gui/source/loader.cpp -o CMakeFiles/gui.dir/source/loader.cpp.s
 
 CMakeFiles/gui.dir/source/pixel.cpp.o: CMakeFiles/gui.dir/flags.make
 CMakeFiles/gui.dir/source/pixel.cpp.o: ../source/pixel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gui.dir/source/pixel.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/pixel.cpp.o -c /home/ernest/shared/gui/source/pixel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/en2/Codes/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gui.dir/source/pixel.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/pixel.cpp.o -c /home/en2/Codes/gui/source/pixel.cpp
 
 CMakeFiles/gui.dir/source/pixel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/pixel.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ernest/shared/gui/source/pixel.cpp > CMakeFiles/gui.dir/source/pixel.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/en2/Codes/gui/source/pixel.cpp > CMakeFiles/gui.dir/source/pixel.cpp.i
 
 CMakeFiles/gui.dir/source/pixel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/pixel.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ernest/shared/gui/source/pixel.cpp -o CMakeFiles/gui.dir/source/pixel.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/en2/Codes/gui/source/pixel.cpp -o CMakeFiles/gui.dir/source/pixel.cpp.s
 
 CMakeFiles/gui.dir/source/screen.cpp.o: CMakeFiles/gui.dir/flags.make
 CMakeFiles/gui.dir/source/screen.cpp.o: ../source/screen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gui.dir/source/screen.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/screen.cpp.o -c /home/ernest/shared/gui/source/screen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/en2/Codes/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gui.dir/source/screen.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/screen.cpp.o -c /home/en2/Codes/gui/source/screen.cpp
 
 CMakeFiles/gui.dir/source/screen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/screen.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ernest/shared/gui/source/screen.cpp > CMakeFiles/gui.dir/source/screen.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/en2/Codes/gui/source/screen.cpp > CMakeFiles/gui.dir/source/screen.cpp.i
 
 CMakeFiles/gui.dir/source/screen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/screen.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ernest/shared/gui/source/screen.cpp -o CMakeFiles/gui.dir/source/screen.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/en2/Codes/gui/source/screen.cpp -o CMakeFiles/gui.dir/source/screen.cpp.s
 
 CMakeFiles/gui.dir/source/sprite.cpp.o: CMakeFiles/gui.dir/flags.make
 CMakeFiles/gui.dir/source/sprite.cpp.o: ../source/sprite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gui.dir/source/sprite.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/sprite.cpp.o -c /home/ernest/shared/gui/source/sprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/en2/Codes/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gui.dir/source/sprite.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/sprite.cpp.o -c /home/en2/Codes/gui/source/sprite.cpp
 
 CMakeFiles/gui.dir/source/sprite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/sprite.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ernest/shared/gui/source/sprite.cpp > CMakeFiles/gui.dir/source/sprite.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/en2/Codes/gui/source/sprite.cpp > CMakeFiles/gui.dir/source/sprite.cpp.i
 
 CMakeFiles/gui.dir/source/sprite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/sprite.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ernest/shared/gui/source/sprite.cpp -o CMakeFiles/gui.dir/source/sprite.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/en2/Codes/gui/source/sprite.cpp -o CMakeFiles/gui.dir/source/sprite.cpp.s
 
 CMakeFiles/gui.dir/source/texture.cpp.o: CMakeFiles/gui.dir/flags.make
 CMakeFiles/gui.dir/source/texture.cpp.o: ../source/texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gui.dir/source/texture.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/texture.cpp.o -c /home/ernest/shared/gui/source/texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/en2/Codes/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gui.dir/source/texture.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/texture.cpp.o -c /home/en2/Codes/gui/source/texture.cpp
 
 CMakeFiles/gui.dir/source/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/texture.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ernest/shared/gui/source/texture.cpp > CMakeFiles/gui.dir/source/texture.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/en2/Codes/gui/source/texture.cpp > CMakeFiles/gui.dir/source/texture.cpp.i
 
 CMakeFiles/gui.dir/source/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/texture.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ernest/shared/gui/source/texture.cpp -o CMakeFiles/gui.dir/source/texture.cpp.s
-
-CMakeFiles/gui.dir/source/texture_manager.cpp.o: CMakeFiles/gui.dir/flags.make
-CMakeFiles/gui.dir/source/texture_manager.cpp.o: ../source/texture_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gui.dir/source/texture_manager.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gui.dir/source/texture_manager.cpp.o -c /home/ernest/shared/gui/source/texture_manager.cpp
-
-CMakeFiles/gui.dir/source/texture_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gui.dir/source/texture_manager.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ernest/shared/gui/source/texture_manager.cpp > CMakeFiles/gui.dir/source/texture_manager.cpp.i
-
-CMakeFiles/gui.dir/source/texture_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gui.dir/source/texture_manager.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ernest/shared/gui/source/texture_manager.cpp -o CMakeFiles/gui.dir/source/texture_manager.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/en2/Codes/gui/source/texture.cpp -o CMakeFiles/gui.dir/source/texture.cpp.s
 
 # Object files for target gui
 gui_OBJECTS = \
 "CMakeFiles/gui.dir/source/display.cpp.o" \
-"CMakeFiles/gui.dir/source/effect.cpp.o" \
 "CMakeFiles/gui.dir/source/effect_recolor.cpp.o" \
+"CMakeFiles/gui.dir/source/filter.cpp.o" \
 "CMakeFiles/gui.dir/source/hal.cpp.o" \
 "CMakeFiles/gui.dir/source/loader.cpp.o" \
 "CMakeFiles/gui.dir/source/pixel.cpp.o" \
 "CMakeFiles/gui.dir/source/screen.cpp.o" \
 "CMakeFiles/gui.dir/source/sprite.cpp.o" \
-"CMakeFiles/gui.dir/source/texture.cpp.o" \
-"CMakeFiles/gui.dir/source/texture_manager.cpp.o"
+"CMakeFiles/gui.dir/source/texture.cpp.o"
 
 # External object files for target gui
 gui_EXTERNAL_OBJECTS =
 
 libgui.a: CMakeFiles/gui.dir/source/display.cpp.o
-libgui.a: CMakeFiles/gui.dir/source/effect.cpp.o
 libgui.a: CMakeFiles/gui.dir/source/effect_recolor.cpp.o
+libgui.a: CMakeFiles/gui.dir/source/filter.cpp.o
 libgui.a: CMakeFiles/gui.dir/source/hal.cpp.o
 libgui.a: CMakeFiles/gui.dir/source/loader.cpp.o
 libgui.a: CMakeFiles/gui.dir/source/pixel.cpp.o
 libgui.a: CMakeFiles/gui.dir/source/screen.cpp.o
 libgui.a: CMakeFiles/gui.dir/source/sprite.cpp.o
 libgui.a: CMakeFiles/gui.dir/source/texture.cpp.o
-libgui.a: CMakeFiles/gui.dir/source/texture_manager.cpp.o
 libgui.a: CMakeFiles/gui.dir/build.make
 libgui.a: CMakeFiles/gui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ernest/shared/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libgui.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/en2/Codes/gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libgui.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/gui.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gui.dir/link.txt --verbose=$(VERBOSE)
 
@@ -229,6 +214,6 @@ CMakeFiles/gui.dir/clean:
 .PHONY : CMakeFiles/gui.dir/clean
 
 CMakeFiles/gui.dir/depend:
-	cd /home/ernest/shared/gui/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ernest/shared/gui /home/ernest/shared/gui /home/ernest/shared/gui/build /home/ernest/shared/gui/build /home/ernest/shared/gui/build/CMakeFiles/gui.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/en2/Codes/gui/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/en2/Codes/gui /home/en2/Codes/gui /home/en2/Codes/gui/build /home/en2/Codes/gui/build /home/en2/Codes/gui/build/CMakeFiles/gui.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/gui.dir/depend
 

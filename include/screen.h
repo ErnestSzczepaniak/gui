@@ -10,11 +10,12 @@ public:
     Screen();
     ~Screen();
 
-    Screen & operator=(Screen & rhs);
+    //Screen & operator=(Screen & rhs);
     void put(Pixel * pixel, int x, int y);
 
+    Pixel _bitmap[screen_size_y_pixels][screen_size_x_pixels];
+
 protected:
-    Pixel _bitmap[screen_resolution_y][screen_resolution_x];
 };
 
 #endif

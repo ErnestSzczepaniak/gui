@@ -1,1 +1,1 @@
-/usr/bin/g++     CMakeFiles/executable.elf.dir/main.cpp.o  -o ../binary/executable.elf libgui.a -lpthread -lallegro 
+/usr/bin/g++     CMakeFiles/executable.elf.dir/main.cpp.o  -o ../binary/executable.elf libgui.a -lpthread 

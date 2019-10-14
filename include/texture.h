@@ -10,20 +10,22 @@ public:
     Texture();
     ~Texture();
 
-    void pixel(Pixel * pixel, int x, int y);
+    Texture & pixel(Pixel * pixel, int x, int y);
     Pixel * pixel(int x, int y);
 
-    void next(Texture * texture);
+    Texture & next(Texture * texture);
     Texture * next();
 
-    void previous(Texture * texture);
+    Texture & previous(Texture * texture);
     Texture * previous();
 
-    void path(const char * path);
+    Texture & path(const char * path);
     const char * path();
 
-    void hash(int hash);
+    Texture & hash(int hash);
     int hash();
+
+    Texture & operator=(Texture & rhs);
 
 protected:
 
@@ -34,7 +36,6 @@ private:
     Texture * _previous;
 
     const char * _path;
-
     int _hash;
 };
 

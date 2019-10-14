@@ -1,51 +1,54 @@
 #include "hal.h"
-#include "allegro5/allegro.h"
+#include <pthread.h>
 #include "unistd.h"
 #include <fstream>
 #include "config.h"
 
 std::ifstream _stream;
-ALLEGRO_DISPLAY * _display;
-ALLEGRO_BITMAP * _bitmap;
+unsigned int * _current_ptr;
 
-void h::gui::display_init()
+void put_pixel(int x, int y, int r, int g, int b)
 {
-    al_init();
-    _display = al_create_display(1024, 720);
-    _bitmap = al_create_bitmap(screen_resolution_x, screen_resolution_y);
+   printf("\x1b[%d;%dH\x1b[38;2;%d;%d;%dm@", y + 1, x + 1, r, g, b);
+}
+
+void * h_screen_refresh(void * params)
+{
+    std::system("clear");
+
+    while(1)
+    {
+        auto my_ptr = _current_ptr;
+
+        for (int i = 0; i < screen_size_y_pixels; i++)
+        {
+            for (int j = 0; j < screen_size_x_pixels; j++)
+            {
+                auto pixel = my_ptr[i * screen_size_x_pixels + j];
+
+                auto a = (pixel >> 24) & 0xff;
+                auto r = (pixel >> 16) & 0xff;
+                auto g = (pixel >> 8) & 0xff;
+                auto b = (pixel) & 0xff;
+
+                put_pixel(j, i, r, g, b);
+            }
+        }
+
+        //usleep(1000000);
+    }
+}
+
+void h::gui::display_init(unsigned int * ptr)
+{   
+    _current_ptr = ptr;
+    pthread_t id;
+    pthread_create(&id, NULL, h_screen_refresh, NULL);
 }
 
 void h::gui::display_pointer(unsigned int * pointer)
 {
-    //al_set_target_bitmap(bitmap);
-
-    for (int i = 0; i < screen_resolution_y; i++)
-    {
-        for (int j = 0; j < screen_resolution_x; j++)
-        {
-            auto pixel = pointer[i * screen_resolution_x + j];
-
-            auto a = (pixel >> 24) & 0xff;
-            auto r = (pixel >> 16) & 0xff;
-            auto g = (pixel >> 8) & 0xff;
-            auto b = (pixel) & 0xff;
-
-            al_put_pixel(j, i, {(float)r/255, (float)g/255, (float)b/255, (float)a/255});
-        }
-    }
-
-    al_draw_bitmap(_bitmap, 0, 0, 0);
-    al_flip_display();
-}
-
-void h::gui::display_put_pixel(int x, int y, int r, int g, int b, int a)
-{
-    al_put_pixel(x, y, {(float)r/255, (float)g/255, (float)b/255, (float)a/255});
-}
-
-void h::gui::display_flip()
-{
-    al_flip_display();
+    _current_ptr = pointer;
 }
 
 bool h::gui::file_open(const char * path)

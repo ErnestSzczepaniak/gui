@@ -6,9 +6,10 @@ CMakeFiles/executable.elf.dir/main.cpp.o
  ../include/display.h
  ../include/effect.h
  ../include/effect_recolor.h
+ ../include/filter.h
  ../include/loader.h
  ../include/pixel.h
  ../include/screen.h
  ../include/sprite.h
  ../include/texture.h
- /home/ernest/shared/gui/main.cpp
+ /home/en2/Codes/gui/main.cpp

@@ -14,7 +14,7 @@ Loader::~Loader()
 
 Texture * Loader::load(const char * path, int index)
 {
-    if (auto result = h::gui::file_open(path); result == true)
+    if (h::gui::file_open(path))
     {
         auto [width, height, offset] = _file_info();
         auto [rows, cols, count] = _model_info(width, height);
@@ -39,6 +39,7 @@ Texture * Loader::load(const char * path, int index)
         }
         else
         {
+            h::gui::file_close();
             return nullptr;
         }
     }

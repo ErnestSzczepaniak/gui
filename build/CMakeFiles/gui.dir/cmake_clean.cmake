@@ -1,14 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gui.dir/source/display.cpp.o"
-  "CMakeFiles/gui.dir/source/effect.cpp.o"
   "CMakeFiles/gui.dir/source/effect_recolor.cpp.o"
+  "CMakeFiles/gui.dir/source/filter.cpp.o"
   "CMakeFiles/gui.dir/source/hal.cpp.o"
   "CMakeFiles/gui.dir/source/loader.cpp.o"
   "CMakeFiles/gui.dir/source/pixel.cpp.o"
   "CMakeFiles/gui.dir/source/screen.cpp.o"
   "CMakeFiles/gui.dir/source/sprite.cpp.o"
   "CMakeFiles/gui.dir/source/texture.cpp.o"
-  "CMakeFiles/gui.dir/source/texture_manager.cpp.o"
   "libgui.a"
   "libgui.pdb"
 )

@@ -1,9 +1,10 @@
 #include "display.h"
 #include "hal.h"
+#include "unistd.h"
 
 Display::Display()
 {
-    _current = &_screen[1];
+    
 }
 
 Display::~Display()
@@ -13,7 +14,8 @@ Display::~Display()
 
 void Display::init()
 {
-    h::gui::display_init();
+    h::gui::display_init((unsigned int *)&_screen[0]);
+    _current = &_screen[1];
 }
 
 void Display::draw(Sprite * sprite)
@@ -22,20 +24,22 @@ void Display::draw(Sprite * sprite)
 
     Texture * texture;
     
-    if (auto * effect = sprite->effect(); effect != nullptr)
-    {
+     if (auto * effect = sprite->effect(); effect != nullptr)
+     {
         texture = effect->apply(sprite->texture());
-    }
-    else
-    {
+     }
+     else
+     {
         texture = sprite->texture();
-    }
+     }
 
-    for (int i = 0; i < 16; i++)
+    for (int i = 0; i < texture_size_y_pixels; i++)
     {
-        for (int j = 0; j < 16; j++)
+        for (int j = 0; j < texture_size_x_pixels; j++) 
         {
             auto * pixel = texture->pixel(j, i);
+
+            if (sprite->filter() != nullptr) pixel = sprite->filter()->apply(pixel);
 
             _current->put(pixel, sprite->pos_x() + j, sprite->pos_y() + i);
         }

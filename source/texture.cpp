@@ -1,4 +1,5 @@
 #include "texture.h"
+#include "string.h"
 
 Texture::Texture()
 {
@@ -10,9 +11,10 @@ Texture::~Texture()
 
 }
 
-void Texture::pixel(Pixel * pixel, int x, int y)
+Texture & Texture::pixel(Pixel * pixel, int x, int y)
 {
     _pixel[y][x] = *pixel;
+    return *this;
 }
 
 Pixel * Texture::pixel(int x, int y)
@@ -20,9 +22,10 @@ Pixel * Texture::pixel(int x, int y)
     return &_pixel[y][x];
 }
 
-void Texture::next(Texture * texture)
+Texture & Texture::next(Texture * texture)
 {
     _next = texture;
+    return *this;
 }
 
 Texture * Texture::next()
@@ -30,9 +33,10 @@ Texture * Texture::next()
     return _next;
 }
 
-void Texture::previous(Texture * texture)
+Texture & Texture::previous(Texture * texture)
 {
     _previous = texture;
+    return *this;
 }
 
 Texture * Texture::previous()
@@ -40,9 +44,10 @@ Texture * Texture::previous()
     return _previous;
 }
 
-void Texture::path(const char * path)
+Texture & Texture::path(const char * path)
 {
     _path = path;
+    return *this;
 }
 
 const char * Texture::path()
@@ -50,12 +55,23 @@ const char * Texture::path()
     return _path;
 }
 
-void Texture::hash(int hash)
+Texture & Texture::hash(int hash)
 {
     _hash = hash;
+    return *this;
 }
 
 int Texture::hash()
 {
     return _hash;
+}
+
+Texture & Texture::operator=(Texture & rhs)
+{
+    for (int i = 0; i < texture_size_y_pixels; i++)
+    {
+        memcpy(_pixel, rhs._pixel, sizeof(_pixel));
+    }
+
+    return *this;
 }

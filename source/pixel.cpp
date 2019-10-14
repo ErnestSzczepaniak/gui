@@ -1,6 +1,11 @@
 #include "pixel.h"
 
 Pixel::Pixel()
+:
+_red(0),
+_green(0),
+_blue(0),
+_alpha(0)
 {
 
 }
@@ -10,47 +15,66 @@ Pixel::~Pixel()
     
 }
 
-void Pixel::red(unsigned char red)
+Pixel & Pixel::red(unsigned char red)
 {
-    _format.red = red;
+    _red = red;
+    return *this;
 }
 
 unsigned char Pixel::red()
 {
-    return _format.red;
+    return _red;
 }
 
-void Pixel::green(unsigned char green)
+Pixel & Pixel::green(unsigned char green)
 {
-    _format.green = green;
+    _green = green;
+    return *this;
 }
 
 unsigned char Pixel::green()
 {
-    return _format.green;
+    return _green;
 }
 
-void Pixel::blue(unsigned char blue)
+Pixel & Pixel::blue(unsigned char blue)
 {
-    _format.blue = blue;
+    _blue = blue;
+    return *this;
 }
 
 unsigned char Pixel::blue()
 {
-    return _format.blue;
+    return _blue;
 }
 
-void Pixel::alpha(unsigned char alpha)
+Pixel & Pixel::alpha(unsigned char alpha)
 {
-    _format.alpha = alpha;
+    _alpha = alpha;
+    return *this;
 }
 
 unsigned char Pixel::alpha()
 {
-    return _format.alpha;
+    return _alpha;
 }
 
-Pixel::Format Pixel::rgba()
+Pixel & Pixel::operator=(Pixel & rhs)
 {
-    return _format;
+    _red = rhs._red;
+    _green = rhs._green;
+    _blue = rhs._blue;
+    _alpha = rhs._alpha;
+
+    return *this;
+}
+
+bool Pixel::operator==(Pixel & rhs)
+{
+    return (
+        _red == rhs._red &&
+        _green == rhs._green && 
+        _blue == rhs._blue && 
+        _alpha == rhs._alpha
+    );
 }

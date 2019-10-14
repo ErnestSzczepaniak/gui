@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 ../include/config.h
+iostream
+-
+stdio.h
+../include/stdio.h
 
 ../include/display.h
 config.h
@@ -23,6 +27,10 @@ texture.h
 ../include/effect_recolor.h
 effect.h
 ../include/effect.h
+
+../include/filter.h
+pixel.h
+../include/pixel.h
 
 ../include/loader.h
 config.h
@@ -45,6 +53,8 @@ texture.h
 ../include/texture.h
 effect.h
 ../include/effect.h
+filter.h
+../include/filter.h
 
 ../include/texture.h
 config.h
@@ -52,15 +62,21 @@ config.h
 pixel.h
 ../include/pixel.h
 
-/home/ernest/shared/gui/main.cpp
+/home/en2/Codes/gui/main.cpp
 texture.h
-/home/ernest/shared/gui/texture.h
+/home/en2/Codes/gui/texture.h
 loader.h
-/home/ernest/shared/gui/loader.h
+/home/en2/Codes/gui/loader.h
 display.h
-/home/ernest/shared/gui/display.h
+/home/en2/Codes/gui/display.h
 effect_recolor.h
-/home/ernest/shared/gui/effect_recolor.h
+/home/en2/Codes/gui/effect_recolor.h
 sprite.h
-/home/ernest/shared/gui/sprite.h
+/home/en2/Codes/gui/sprite.h
+fstream
+-
+filter.h
+/home/en2/Codes/gui/filter.h
+unistd.h
+/home/en2/Codes/gui/unistd.h
 

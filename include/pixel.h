@@ -1,36 +1,34 @@
 #ifndef _pixel_h
 #define _pixel_h
 
-class Pixel
+class [[gnu::packed]] Pixel
 {
-    struct [[gnu::packed]] Format
-    {
-        unsigned char red;
-        unsigned char green;
-        unsigned char blue;
-        unsigned char alpha;
-    };
-
 public:
     Pixel();
     ~Pixel();
 
-    void red(unsigned char value);
+    Pixel & red(unsigned char value);
     unsigned char red();
 
-    void green(unsigned char value);
+    Pixel & green(unsigned char value);
     unsigned char green();
 
-    void blue(unsigned char value);
+    Pixel & blue(unsigned char value);
     unsigned char blue();
 
-    void alpha(unsigned char value);
+    Pixel & alpha(unsigned char value);
     unsigned char alpha();
 
-    Format rgba();
+    Pixel & operator=(Pixel & rhs);
+    bool operator==(Pixel & rhs);
 
 protected:
-    Format _format;
+
+private:
+    unsigned char _red;
+    unsigned char _green;
+    unsigned char _blue;
+    unsigned char _alpha;
 
 };
 
