@@ -5,6 +5,7 @@ class [[gnu::packed]] Pixel
 {
 public:
     Pixel();
+    Pixel(unsigned char red, unsigned char green, unsigned char blue, unsigned char alpha);
     ~Pixel();
 
     Pixel & red(unsigned char value);
@@ -21,6 +22,8 @@ public:
 
     Pixel & operator=(Pixel & rhs);
     bool operator==(Pixel & rhs);
+
+    operator unsigned int();
 
 protected:
 

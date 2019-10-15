@@ -12,7 +12,7 @@ int main()
    Loader loader;
    Display display;
    Effect_recolor recolor;
-   Sprite sprite;
+   Sprite se, sr, sn;
    Filter_set filter;
 
    display.init();
@@ -20,33 +20,27 @@ int main()
 
    filter.red(100);
 
-   auto * texture = loader.load("/home/en2/Codes/gui/strike.bmp", 0);
+   auto * e = loader.load("/home/en2/Codes/gui/ern2.bmp", 0);
+   auto * r = loader.load("/home/en2/Codes/gui/ern.bmp", 1);
+   auto * n = loader.load("/home/en2/Codes/gui/ern.bmp", 2);
 
-   Texture test;
-   test = *texture;
 
-   sprite.texture(&test);
-   sprite.filter(&filter);
+   se.texture(e);
+   sr.texture(r);
+   sn.texture(n);
 
-   //sprite.effect(&recolor);
-
-      //sprite.pos_x(16 * i);
-      //sprite.pos_y(0);
-      //sprite.texture(sprite.texture()->next());
       
-
-
+   sr.pos_y(16);
+   sn.pos_y(32);
 
 
    while(1)
    {
+      usleep(100000);
 
-      usleep(1000000);
 
-      if (sprite.pos_x() < (screen_size_x_pixels - texture_size_x_pixels)) sprite.pos_x(sprite.pos_x() + 1);
-   
-      filter.red(filter.red() + 1);
-      filter.blue(filter.blue() - 5);
-      display.draw(&sprite);
+      display.draw(&se);
+      display.draw(&sr);     
+      display.draw(&sn);   
    }
 }

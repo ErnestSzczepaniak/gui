@@ -33,17 +33,7 @@ void Display::draw(Sprite * sprite)
         texture = sprite->texture();
      }
 
-    for (int i = 0; i < texture_size_y_pixels; i++)
-    {
-        for (int j = 0; j < texture_size_x_pixels; j++) 
-        {
-            auto * pixel = texture->pixel(j, i);
-
-            if (sprite->filter() != nullptr) pixel = sprite->filter()->apply(pixel);
-
-            _current->put(pixel, sprite->pos_x() + j, sprite->pos_y() + i);
-        }
-    }
+    _current->draw(texture, sprite->pos_x(), sprite->pos_y());
 
     h::gui::display_pointer((unsigned int *) _current);
 

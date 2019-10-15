@@ -9,7 +9,7 @@ unsigned int * _current_ptr;
 
 void put_pixel(int x, int y, int r, int g, int b)
 {
-   printf("\x1b[%d;%dH\x1b[38;2;%d;%d;%dm@", y + 1, x + 1, r, g, b);
+   printf("\x1b[%d;%dH\x1b[38;2;%d;%d;%dm|x|", y + 1, (x + 1) * 3, r, g, b);
 }
 
 void * h_screen_refresh(void * params)

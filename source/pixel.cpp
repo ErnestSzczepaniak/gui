@@ -10,6 +10,16 @@ _alpha(0)
 
 }
 
+Pixel::Pixel(unsigned char red, unsigned char green, unsigned char blue, unsigned char alpha)
+:
+_red(red),
+_green(green),
+_blue(blue),
+_alpha(alpha)
+{
+    
+}
+
 Pixel::~Pixel()
 {
     
@@ -77,4 +87,9 @@ bool Pixel::operator==(Pixel & rhs)
         _blue == rhs._blue && 
         _alpha == rhs._alpha
     );
+}
+
+Pixel::operator unsigned int()
+{
+    return (_red << 24 | _green << 18 | _blue << 8 | _alpha);
 }

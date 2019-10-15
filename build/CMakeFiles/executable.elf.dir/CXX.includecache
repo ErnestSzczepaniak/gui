@@ -43,8 +43,8 @@ texture.h
 ../include/screen.h
 config.h
 ../include/config.h
-pixel.h
-../include/pixel.h
+texture.h
+../include/texture.h
 
 ../include/sprite.h
 config.h

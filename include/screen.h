@@ -2,7 +2,7 @@
 #define _screen_h
 
 #include "config.h"
-#include "pixel.h"
+#include "texture.h"
 
 class Screen
 {
@@ -10,12 +10,17 @@ public:
     Screen();
     ~Screen();
 
-    //Screen & operator=(Screen & rhs);
-    void put(Pixel * pixel, int x, int y);
+    Screen & background(Pixel pixel);
+    Pixel * background();
 
-    Pixel _bitmap[screen_size_y_pixels][screen_size_x_pixels];
+    Screen & draw(Texture * texture, int x, int y);
+    Screen & clear(int x, int y, int size_x, int size_y);
+
+    Screen & operator=(Screen & rhs);
 
 protected:
+    Pixel _bitmap[screen_size_y_pixels][screen_size_x_pixels];
+    Pixel _background;
 };
 
 #endif
